@@ -136,7 +136,7 @@ namespace Strategic
             bombardiers.Append(new OffMap(*this, unit));
             return (TRUE);
         }
-        if (unit->UnitType()->HasProperty(0xFC7A2C8C) && !strategic->GetTeam()->IsHuman()) // "Ability::Bombardier"
+        if (unit->UnitType()->HasProperty(0xFC7A2C8C) && strategic->GetTeam()->IsAI()) // "Ability::Bombardier"
         {
             // Create a new offmap bombardier which will manage this unit
             bombardiers.Append(new Unit(*this, unit));

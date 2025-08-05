@@ -59,15 +59,15 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>F:\Games\Dark Reign 2</OutDir>
+    <OutDir>C:\compile\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>F:\Games\Dark Reign 2</OutDir>
+    <OutDir>C:\compile\</OutDir>
     <LinkIncremental>true</LinkIncremental>
     <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
-    <OutDir>F:\Games\Dark Reign 2</OutDir>
+    <OutDir>C:\compile\</OutDir>
     <LinkIncremental>true</LinkIncremental>
     <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>

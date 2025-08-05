@@ -1887,29 +1887,28 @@ namespace Movement
                                 }
                             }
 
-                            ////
-                            //// Are unit's going to the same destination
-                            ////
-                            //if (!solution)
-                            //{
-                            //    if (driver[0]->GoingMyWay(driver[1]))
-                            //    {
-                            //        if (driver[0]->OverlappingProbeBuffers(driver[1]))
-                            //        {
-                            //            LOG_MOVE2(("M%6d averting deadlock", item->handle));
-                            //        }
-                            //        else
-                            //        {
-                            //            // Slower unit is in front?
-                            //            if (moving[Requester] && moving[NonRequester])
-                            //            {
-                            //            }
-                            //            // Let it slide
-                            //            continue;
-                            //        }
-                            //    }
-                            //}
-                            //// Jonathan: Don't allow units to all go the same direction since they follow each other and block the way.
+                            //
+                            // Are unit's going to the same destination
+                            //
+                            if (!solution)
+                            {
+                                if (driver[0]->GoingMyWay(driver[1]))
+                                {
+                                    if (driver[0]->OverlappingProbeBuffers(driver[1]))
+                                    {
+                                        LOG_MOVE2(("M%6d averting deadlock", item->handle));
+                                    }
+                                    else
+                                    {
+                                        // Slower unit is in front?
+                                        if (moving[Requester] && moving[NonRequester])
+                                        {
+                                        }
+                                        // Let it slide
+                                        continue;
+                                    }
+                                }
+                            }
 
                             //
                             // Fall back to general test 

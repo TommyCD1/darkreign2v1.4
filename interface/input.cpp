@@ -42,7 +42,7 @@ namespace Input
 
     // Buffer sizes
         const U32 KEYBUFSIZE = 32;
-    const U32 MOUSEBUFSIZE = 128;
+    const U32 MOUSEBUFSIZE = 320;
 
     // Mouse buttons
     const U32 MAXBUTTONS = 4;

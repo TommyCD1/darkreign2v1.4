@@ -58,14 +58,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>F:\Games\Dark Reign 2\</OutDir>
+    <OutDir>C:\compile\</OutDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>dr2_$(Configuration)</TargetName>
     <IntDir>$(Configuration)\</IntDir>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|Win32'">
-    <OutDir>F:\Games\Dark Reign 2\</OutDir>
+    <OutDir>C:\compile\</OutDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>dr2_$(Configuration)</TargetName>
     <IntDir>$(Configuration)\</IntDir>
@@ -73,7 +73,7 @@
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>F:\Games\Dark Reign 2\</OutDir>
+    <OutDir>C:\compile\</OutDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetName>dr2_$(Configuration)</TargetName>
     <IntDir>$(Configuration)\</IntDir>
