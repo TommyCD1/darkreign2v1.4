@@ -582,8 +582,7 @@ Bool MapObjType::InitializeResources()
     {
         const F32 GRAIN_METRES = WC_CELLSIZEF32 * 0.5F;
 
-        // JONATHAN: Halve `Width` and `Breadth` to allow units to cluster closer together.
-        F32 radius = Max<F32>(bounds.Width() / 2, bounds.Breadth() / 2);
+        F32 radius = Max<F32>(bounds.Width(), bounds.Breadth());
         grainSize = Clamp<U32>(1, Utils::FtoL((GRAIN_METRES + radius * 2.0F) / GRAIN_METRES), 2);
     }
 
