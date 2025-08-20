@@ -1,25 +1,9 @@
-# Dark Reign 2
+# Dark Reign 2 Patch 1.4
 
 ## General Update:
 - Fixed issue with Direct Input buffer filling up and causing mouse cursor to freeze.
 - Fixed issue with path planning failing to resolve in time due to calculation per tick limits.
-- Altered path planning to make units herd together instead of creating an annoying single file and getting caught behind each other.
 - Fixed issue where saving stats would cause the game to crash.
-
-## OpenGL Update:
-- Implementation of OpenGL rendering instead of DirectX 7 (Currently in progress)
-- 4k resolution is possible by setting a breakpoint at the `create device` error and following the code manually...
-- More information in the `upgrade-graphics-system` branch of this project.
-
-## Todo (In Progress Development)
-- NAT Loopback (Hairpinning) for users on a local network to mix with online players.
-- Locking / Unlocking (Generally updating) a created game may cause the IP to be reset to the `Local IP` set in multiplayer options for people not currently in the game.
-- Join / Create a private lobby.
-- Music doesn't work.
-- Map transfers fail to initiate.
-- Online: Games created by a user may become stuck if that user leaves the room while another player is attempting to join.
-- Game sometimes locks up at the end of a multiplayer match.
-- Unit path-finding is still a major controversy amongst players and will need to be resolved for enjoyment of newer players.
 
 ## Fixed (Check Releases Section)
 - Private Rooms: Users can now join private rooms if they know the password ;)
@@ -119,6 +103,6 @@ alt t - terminator
 17. Added support for language specific auto updated patches.
 18. New patches need only be the actual RTP patch file (no need for redistributing the patch installer and the RTPatch DLL as these have been added to the games data via the 1.1 patch).
 19. Added axes, which allow symmetrical painting of textures and colors on maps.
-20 Linked buildings (like public telepads) now display their link in the studio and also there was a bug in the studio, which prevented you from changing a telepad link once it had been set.
+20. Linked buildings (like public telepads) now display their link in the studio and also there was a bug in the studio, which prevented you from changing a telepad link once it had been set.
 21. If any player has different data they are notified at game start so that they need not wait for the OOS message.
 22. Made the OOS message more confrontational giving the player to exit immediately.
