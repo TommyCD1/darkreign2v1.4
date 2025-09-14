@@ -133,13 +133,13 @@ void MeshOptions::Check()
 
     if (options)
     {
-        options->Find(Crc::CalcStr("vertsedit"))->SetEnabled(FALSE);
-        options->Find(Crc::CalcStr("trisedit"))->SetEnabled(FALSE);
+        //  options->Find(Crc::CalcStr("vertsedit"))->SetEnabled(FALSE);
+        //  options->Find(Crc::CalcStr("trisedit"))->SetEnabled(FALSE);
 
-        options->Find(Crc::CalcStr("heightedit"))->SetEnabled(FALSE);
-        options->Find(Crc::CalcStr("widthedit"))->SetEnabled(FALSE);
-        options->Find(Crc::CalcStr("depthedit"))->SetEnabled(FALSE);
-        options->Find(Crc::CalcStr("radiusedit"))->SetEnabled(FALSE);
+        //  options->Find(Crc::CalcStr("heightedit"))->SetEnabled(FALSE);
+        //  options->Find(Crc::CalcStr("widthedit"))->SetEnabled(FALSE);
+        //  options->Find(Crc::CalcStr("depthedit"))->SetEnabled(FALSE);
+        //  options->Find(Crc::CalcStr("radiusedit"))->SetEnabled(FALSE);
 
         options->Find(Crc::CalcStr("live"))->SetEnabled(*shadow);
         options->Find(Crc::CalcStr("semilive"))->SetEnabled(*shadow);

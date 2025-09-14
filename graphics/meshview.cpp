@@ -545,6 +545,7 @@ namespace MeshView
         VarSys::CreateInteger("brush.moveZkey", FALSE, VarSys::NOTIFY, &brushMoveZKey);
 
         VarSys::CreateCmd("brush.next");
+        VarSys::CreateCmd("brush.prev");
         VarSys::CreateCmd("brush.toggle");
 
         VarSys::CreateInteger("aim.X", TRUE, VarSys::NOTIFY, &aimX);
@@ -1886,6 +1887,28 @@ namespace MeshView
                     SetBrush(&viewBrush);
                 }
                 break;
+            case 0x348F532A: // "brush.prev"
+                if (curBrush == &viewBrush)
+                {
+                    SetBrush(&vertBrush);
+                }
+                else if (curBrush == &animBrush)
+                {
+                    SetBrush(&viewBrush);
+                }
+                else if (curBrush == &aimBrush)
+                {
+                    SetBrush(&animBrush);
+                }
+                else if (curBrush == &treadBrush)
+                {
+                    SetBrush(&aimBrush);
+                }
+                else
+                {
+                    SetBrush(&treadBrush);
+                }
+                break;
             case 0xFA344BEA: // "brush.toggle"
                 curBrush->Toggle();
                 break;
@@ -2391,7 +2414,7 @@ namespace MeshView
             return FALSE;
         }
 
-        Vid::SetFogColor(0.8f, 0.8f, 0.6f);
+        Vid::SetFogColor(0.0f, 0.0f, 0.0f);
         Vid::SetFogRange(0.0f, 100.0f, 1.0f);
         Vid::SetFarPlane(1000.0f);
 
